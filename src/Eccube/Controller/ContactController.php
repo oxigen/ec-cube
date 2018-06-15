@@ -72,7 +72,7 @@ class ContactController
         );
         $app['eccube.event.dispatcher']->dispatch(EccubeEvents::FRONT_CONTACT_INDEX_INITIALIZE, $event);
 
-        $form = $builder->getForm();
+        //$form = $builder->getForm();
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
